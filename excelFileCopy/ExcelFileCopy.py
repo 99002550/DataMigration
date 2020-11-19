@@ -34,7 +34,7 @@ if os.path.isfile(filename1) and os.access(filename1, os.R_OK):
     # saving the destination excel file
     wb2.save(str(filename1))
 
-# file exist with but read and write permissions are not granted
+# file exist but read and write permissions are not granted
 elif os.path.isfile(filename1) and not os.access(filename1, os.R_OK):
     print('file access denied. operation ended\n')
 
